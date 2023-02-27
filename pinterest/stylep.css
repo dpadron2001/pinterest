@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 1%;
+    width: 90%;
+}
+nav{
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.top ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin: 1%;
+    height: 50px;
+}
+.navbut{
+    margin: 2%;
+    position: relative;
+}
+.navbut a:hover{
+    padding: 10px;
+    background: rgb(211, 207, 207);
+    border-radius: 10px;
+    margin: 2%;
+}
+.top ul li button a:hover{
+    background: rgb(211, 207, 207);
+    position: absolute;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    border: transparent;
+}
+.container{
+    width: 100%;
+    min-height: 100%;
+    margin: 15px;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background-color: rgb(211, 207, 207);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 10px;
+    
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 33px;
+    height: 30px;
+    cursor: pointer;
+}
+.search-bar button img{
+    width: 15px;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+}
+/*body*/
+.image-containe{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 220px;
+    padding: 10px;
+    grid-gap: 1em;
+    box-sizing: border-box;
+    margin-top: 3.5%;
+}
+.image-containe img{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 1%;
+}
+.boton{
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    text-align: center;
+    background-color: aqua;
+    visibility: hidden;
+}
+.card-image div:hover .boton{
+    visibility: visible;
+    border: 0;
+    outline: none;
+}
+.card-image .boton{
+    position: absolute;
+    top: 5%;
+    right: 68%;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.image-containe div:hover .link{
+    visibility: visible;
+    border: 0;
+    outline: none;
+}
+.card-image .link{
+    position: absolute;
+    top: 78%;
+    right: 40%;
+    padding: 5px;
+    background-color: rgb(211, 207, 207);
+    border-radius: 10px;
+    visibility: hidden;
+    max-width: 200px;
+    opacity: 0.7;
+}
+@media only screen and (max-width: 1460px){
+    .card-image{
+        width: 100%;   
+    }
+    .image-containe{
+        grid-template-columns: repeat(5, 1fr);
+}
+@media only screen and (max-width: 1080px){
+    .card-image{
+        width: 100%;   
+    }
+    .image-containe{
+        grid-template-columns: repeat(4, 1fr);
+}
+@media only screen and (max-width: 720px){
+    .card-image{
+        width: 100%;   
+    }
+    .image-containe{
+        grid-template-columns: repeat(3, 1fr);
+}
